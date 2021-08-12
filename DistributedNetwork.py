@@ -4,6 +4,13 @@ import os
 import sys
 import tensorflow as tf
 
+a = np.random.choice([0,1], p=p_a, size=N)
+z = np.random.choice([0,1], p=p_z, size=N)
+x = [np.random.multivariate_normal(mu[z_i],cov) for z_i in z]
+
+y = [np.random.choice([zi,1-zi],p=[1-beta[ai], beta[ai]]) for ai,zi in zip(a,z)]
+labels_protected = np.asarray([a,z,y]).T
+
 def __write_class_start(output_file, class_name):
 
 
