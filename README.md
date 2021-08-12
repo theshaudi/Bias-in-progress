@@ -1,4 +1,4 @@
-# Bias-in-progress: Plans to complete by Demo
+# Bias-in-progress: Elements to show by Monday Demo
 
 ** Dataset generation files (generic)
 There will be four distinct types of dataset generation
